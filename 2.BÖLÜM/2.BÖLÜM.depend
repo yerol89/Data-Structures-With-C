@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1581513570 source:c:\users\user\yazilim\data structures\olcay taner yildiz «÷z‹m\2.b÷l‹m\functions.c
+	"sll.h"
+
+1581512640 c:\users\user\yazilim\data structures\olcay taner yildiz «÷z‹m\2.b÷l‹m\sll.h
+	<stdio.h>
+	<stdlib.h>
+
+1581512929 source:c:\users\user\yazilim\data structures\olcay taner yildiz «÷z‹m\2.b÷l‹m\main.c
+	<stdio.h>
+	<stdlib.h>
+	"sll.h"
+
