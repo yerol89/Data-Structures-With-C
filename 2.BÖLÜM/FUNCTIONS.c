@@ -56,6 +56,7 @@ SLLI*DeleteItem(SLLI*pHead,int toDel)
 }
 
 
+//1.Algorithm finding the minimum element in a Singly Linked List(SLL)
 int FindMin(SLLI*pHead)
 {
     SLLI*pMin=pHead;
@@ -74,7 +75,7 @@ int FindMin(SLLI*pHead)
     printf("Minimum value is %d",mini);
 }
 
-
+//2.Algorithm deleting the second node in a SLL
 void DeleteSecond(SLLI*pHead)
 {
 
@@ -85,7 +86,7 @@ void DeleteSecond(SLLI*pHead)
 
     return pHead;
 }
-
+//3. Algorithm which returns odd indexed nodes in an another SLL
 SLLI*OddNodes(SLLI*pHead)
 {
    int counter =1;
@@ -120,6 +121,7 @@ SLLI*OddNodes(SLLI*pHead)
         return pNewHead;
 }
 
+//4.Algorithm which deletes even indexed nodes in a SLL
 SLLI*DeleteEven(SLLI*pHead)
 {
     SLLI*prev=pHead;
@@ -147,6 +149,7 @@ SLLI*DeleteEven(SLLI*pHead)
     return pHead;
 }
 
+//5. Algorithm which adds a new node before the last node in a SLL
 SLLI*AddBeforeEnd(SLLI*pHead,int x)
 {
     SLLI*pTemp=pHead;
@@ -162,6 +165,7 @@ SLLI*AddBeforeEnd(SLLI*pHead,int x)
     return pHead;
 }
 
+//6.Algorithm which adds a node in order in a sorted SLL 
 SLLI*AddInOrder(SLLI*pHead,int ToAdd)
 {
     SLLI*pTemp=pHead;
@@ -195,6 +199,7 @@ SLLI*AddInOrder(SLLI*pHead,int ToAdd)
 
 }
 
+//7.Algorithm which deletes i th node of a given SLL
 SLLI*DeletekthNode(SLLI*pHead,int k)
 {
     int counter=2;
@@ -222,6 +227,7 @@ SLLI*DeletekthNode(SLLI*pHead,int k)
     return pHead;
 }
 
+//8.Algorithm which deletes an element that comes after a given element X
 SLLI*DeleteNextNode(SLLI*pHead,int x)
 {
     SLLI*pTemp=pHead;
@@ -246,6 +252,7 @@ SLLI*DeleteNextNode(SLLI*pHead,int x)
     return pHead;
 }
 
+//9.Algorithm which moves a given  element n steps 
 SLLI*MoveNode(SLLI*pHead,int k,int i)
 {
     int j=0;
