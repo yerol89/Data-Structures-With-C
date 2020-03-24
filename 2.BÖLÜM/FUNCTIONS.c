@@ -56,7 +56,6 @@ SLLI*DeleteItem(SLLI*pHead,int toDel)
 }
 
 
-//1.Algorithm finding the minimum element in a Singly Linked List(SLL)
 int FindMin(SLLI*pHead)
 {
     SLLI*pMin=pHead;
@@ -75,7 +74,7 @@ int FindMin(SLLI*pHead)
     printf("Minimum value is %d",mini);
 }
 
-//2.Algorithm deleting the second node in a SLL
+
 void DeleteSecond(SLLI*pHead)
 {
 
@@ -86,7 +85,7 @@ void DeleteSecond(SLLI*pHead)
 
     return pHead;
 }
-//3. Algorithm which returns odd indexed nodes in an another SLL
+
 SLLI*OddNodes(SLLI*pHead)
 {
    int counter =1;
@@ -121,7 +120,6 @@ SLLI*OddNodes(SLLI*pHead)
         return pNewHead;
 }
 
-//4.Algorithm which deletes even indexed nodes in a SLL
 SLLI*DeleteEven(SLLI*pHead)
 {
     SLLI*prev=pHead;
@@ -149,7 +147,6 @@ SLLI*DeleteEven(SLLI*pHead)
     return pHead;
 }
 
-//5. Algorithm which adds a new node before the last node in a SLL
 SLLI*AddBeforeEnd(SLLI*pHead,int x)
 {
     SLLI*pTemp=pHead;
@@ -165,7 +162,6 @@ SLLI*AddBeforeEnd(SLLI*pHead,int x)
     return pHead;
 }
 
-//6.Algorithm which adds a node in order in a sorted SLL 
 SLLI*AddInOrder(SLLI*pHead,int ToAdd)
 {
     SLLI*pTemp=pHead;
@@ -199,7 +195,6 @@ SLLI*AddInOrder(SLLI*pHead,int ToAdd)
 
 }
 
-//7.Algorithm which deletes i th node of a given SLL
 SLLI*DeletekthNode(SLLI*pHead,int k)
 {
     int counter=2;
@@ -227,7 +222,6 @@ SLLI*DeletekthNode(SLLI*pHead,int k)
     return pHead;
 }
 
-//8.Algorithm which deletes an element that comes after a given element X
 SLLI*DeleteNextNode(SLLI*pHead,int x)
 {
     SLLI*pTemp=pHead;
@@ -252,7 +246,6 @@ SLLI*DeleteNextNode(SLLI*pHead,int x)
     return pHead;
 }
 
-//9.Algorithm which moves a given  element n steps 
 SLLI*MoveNode(SLLI*pHead,int k,int i)
 {
     int j=0;
@@ -295,5 +288,163 @@ SLLI*MoveNode(SLLI*pHead,int k,int i)
         return pHead;
 }
 
+SLLI*PrimeFactor(int N)
+{
+    SLLI*prime=NULL;
+    int i,j,isPrime;
+    for (i = 2; i <= N; i++)
+   	{
+     	if(N % i == 0)
+        {
+   			isPrime = 1;
+			for (j = 2; j <= i/2; j++)
+			{
+				if(i % j == 0)
+				{
+					isPrime = 0;
+					break;
+				}
+			}
+			if(isPrime == 1)
+			{
+
+                prime=AddItemtoEnd(prime,i);
+			}
+		}
+   }
+    return prime;
+}
+
+
+SLLI*AddMultipleofN(SLLI*p,int N)
+{
+    SLLI*pTemp=p;
+    SLLI*pNew=NULL;
+    while(pTemp != NULL)
+    {
+       if(pTemp->data % N ==0)
+       {
+           pNew=AddItemtoEnd(pNew,pTemp->data);
+       }
+       pTemp=pTemp->next;
+
+    }
+
+    return pNew;
+
+}
+
+void printReverse(SLLI* head)
+{
+    // Base case
+    if (head == NULL)
+       return;
+
+    // print the list after head node
+    printReverse(head->next);
+
+    // After everything else is printed, print head
+    printf("%d \t ", head->data);
+}
+
+
+void SameElements(SLLI*p,SLLI*q)
+{
+    SLLI*p1=p;
+    SLLI*q1=NULL;
+
+    while(p1 != NULL)
+    {
+        for(q1=q;q1 != NULL;q1=q1->next)
+        {
+            if(p1->data == q1->data)
+            {
+                printf("%d\t",p1->data);
+                break;
+            }
+        }
+        p1=p1->next;
+    }
+}
+
+
+void IsIdentical(SLLI*p,SLLI*q)
+{
+    if(p == NULL && q == NULL)
+        printf("Lists are identical");
+
+    if(p == NULL || q == NULL)
+        printf("Lists are NOT identical");
+
+    if(p->data != q->data)
+        printf("Lists are NOT identical");
+
+    return IsIdentical(p->next,q->next);
+}
+
+
+typedef struct node{
+int data;
+struct node *next;
+}STACK;
+
+STACK*top;
+
+
+void Push(int toAdd)
+{
+    STACK*New;
+    New=malloc(sizeof(STACK));
+    New->data=toAdd;
+    New->next=top;
+    top=New;
+
+}
+
+
+
+int Pop()
+{   int a;
+    a=top->data;
+    STACK*temp=top;
+
+    if(top==NULL)
+        printf("Stack is empty!!!\n");
+    else
+    {
+        top=top->next;
+        free(temp);
+    }
+    return a;
+}
+
+
+ void IsPalindrome(SLLI*p)
+{
+    SLLI*pTemp=p;
+    SLLI*Iter=p;
+
+    while(pTemp != NULL)
+    {
+        Push(pTemp->data);
+        pTemp=pTemp->next;
+    }
+
+    while(Iter != NULL)
+    {
+        int i=Pop();
+        if(Iter->data != i)
+        {
+            printf("Not Palindrome");
+            break;
+        }
+
+        Iter=Iter->next;
+    }
+       printf("List is palindrome");
+
+
+
+}
 
 

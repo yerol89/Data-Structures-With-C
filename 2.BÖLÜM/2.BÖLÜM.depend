@@ -1,13 +1,33 @@
 # depslib dependency file v1.0
-1581513570 source:c:\users\user\yazilim\data structures\olcay taner yildiz «÷z‹m\2.b÷l‹m\functions.c
+1581589623 source:c:\users\user\yazilim\data structures\olcay taner yildiz «÷z‹m\2.b÷l‹m\functions.c
 	"sll.h"
 
-1581512640 c:\users\user\yazilim\data structures\olcay taner yildiz «÷z‹m\2.b÷l‹m\sll.h
+1581589007 c:\users\user\yazilim\data structures\olcay taner yildiz «÷z‹m\2.b÷l‹m\sll.h
 	<stdio.h>
 	<stdlib.h>
 
-1581512929 source:c:\users\user\yazilim\data structures\olcay taner yildiz «÷z‹m\2.b÷l‹m\main.c
+1581589706 source:c:\users\user\yazilim\data structures\olcay taner yildiz «÷z‹m\2.b÷l‹m\main.c
 	<stdio.h>
 	<stdlib.h>
 	"sll.h"
+
+1585062918 source:c:\users\user\yazilim\dersler\data structures\olcay taner yildiz «÷z‹m\2.b÷l‹m\functions.c
+	"sll.h"
+
+1585062968 c:\users\user\yazilim\dersler\data structures\olcay taner yildiz «÷z‹m\2.b÷l‹m\sll.h
+	<stdio.h>
+	<stdlib.h>
+
+1585062934 source:c:\users\user\yazilim\dersler\data structures\olcay taner yildiz «÷z‹m\2.b÷l‹m\main.c
+	<stdio.h>
+	<stdlib.h>
+	"sll.h"
+	"dll.h"
+
+1584971083 source:c:\users\user\yazilim\dersler\data structures\olcay taner yildiz «÷z‹m\2.b÷l‹m\dll_functions.c
+	"dll.h"
+
+1584970641 c:\users\user\yazilim\dersler\data structures\olcay taner yildiz «÷z‹m\2.b÷l‹m\dll.h
+	<stdio.h>
+	<stdlib.h>
 
