@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1586204205 source:c:\users\user\yazilim\dersler\data structures\olcay taner yildiz ÇÖzÜm\5.bölüm_bst\bst\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"bst.h"
+
+1586203673 c:\users\user\yazilim\dersler\data structures\olcay taner yildiz ÇÖzÜm\5.bölüm_bst\bst\bst.h
+
+1586205979 source:c:\users\user\yazilim\dersler\data structures\olcay taner yildiz ÇÖzÜm\5.bölüm_bst\bst\functions_bst.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"bst.h"
+
