@@ -6,11 +6,11 @@ I am solving the problems in the book named C-Java-ile-Veri-Yapilarina-Giris-(In
 
 ## Table Of Contents
 
--Part Two
- -Singly Linked List Functions
- -Doubly Linked List Functions
--Part Five
- -BST Functions
++ Part Two
+ + Singly Linked List Functions
+ + Doubly Linked List Functions
++ Part Five
+ + BST Functions
 
 
 
